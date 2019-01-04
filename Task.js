@@ -6,8 +6,8 @@ export default class Task extends Component {
 
 constructor() {
   super()
-  this.state = {
-   text: '',
+  this.state = {   
+      text: '',
   }
   this.sendUpdate = this.sendUpdate.bind(this);
   this.dontSendUpdate = this.dontSendUpdate.bind(this);
@@ -15,11 +15,15 @@ constructor() {
   this.nonEdit = this.nonEdit.bind(this); 
 }
 
+componentWillUpdate() {
+    console.log(this.state.text)
+}
+
 componentDidMount() {
-    let propText = this.props.text
+    let propText = this.props.text;
     this.setState({
         text: propText
-    })
+    });
 }
 
 sendUpdate() {
