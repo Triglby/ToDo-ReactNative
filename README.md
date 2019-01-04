@@ -1,4 +1,4 @@
-#To Do Project
+# To Do Project
 
 ## React Native Front End
 For docs on how to create a react-native application follow this 
